@@ -50,6 +50,7 @@ The Node.js backend handles all data and authentication.
 ```bash
 cd api
 npm install
+node seed.js   # ⬅️ Run this once to populate the Demo Accounts and empty structure!
 npm start
 ```
 *Port: 5000*
@@ -88,4 +89,4 @@ The entire system operates on stateless, secure authentication using JSON Web To
 - **Seamless Session Handling**: If the token expires while the user is active, the backend immediately responds with a `401 Unauthorized` error. The frontend's global interceptors catch this error, purge the invalid token from storage, wipe the `AuthContext` state, and gracefully redirect the user back to the `/login` screen to re-authenticate.
 
 ---
-**Developed by Nandha** (Assignment for Junior Software Developer)
+**Developed by Nandhakumar M** (Assignment for Junior Software Developer)

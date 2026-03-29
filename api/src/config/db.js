@@ -3,7 +3,7 @@ const logger = require('../utils/logger');
 
 const connectDB = async () => {
     try {
-        const uri = process.env.MONGO_URI || 'mongodb://localhost:27017/edumerge_db';
+        const uri = process.env.MONGO_URI_HOST || process.env.MONGO_URI_LOCAL || 'mongodb://localhost:27017/edumerge_db';
         const conn = await mongoose.connect(uri);
         logger.info(`MongoDB Connected: ${conn.connection.host}`, 'Database');
 
