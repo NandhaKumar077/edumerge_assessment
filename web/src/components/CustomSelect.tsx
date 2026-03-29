@@ -36,7 +36,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-    const toggle = (event: React.MouseEvent) => {
+    const toggle = () => {
         if (!isOpen) {
             const rect = wrapperRef.current?.getBoundingClientRect();
             if (rect) {

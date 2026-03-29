@@ -58,6 +58,8 @@
 
 .tab-content {
     padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
 }
 
 .grid-3 {
